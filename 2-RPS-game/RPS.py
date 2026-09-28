@@ -1,7 +1,4 @@
 import random
-
-
-
 print("--ROCK--PAPER--SCISSORS--GAME--")
 while True:
     best=input("First to how many wins: ")
@@ -14,13 +11,11 @@ while True:
     else:
         print("Enter valid integer.")
 u_wins,c_wins=0,0
-
 beats={"rock":["scissors","lizard"],
        "scissors":["paper","lizard"],
        "paper":["spock","rock"],
        "spock":["scissors","rock"],
        "lizard":["spock","paper"]}
-
 while True:
     u_choice=input("Choose- ROCK / PAPER / SCISSORS / LIZARD / SPOCK / QUIT - ").strip().lower()
 
@@ -40,8 +35,7 @@ while True:
         print("\n--You won--")  
         if u_wins==best:
             print("--You Won the Game")
-            break
-    
+            break   
     else:
         print("\n--You lost--")
         c_wins+=1
